@@ -441,10 +441,11 @@ const client = new Adoaler({
 ## Suporte
 
 - **Email**: support@adoaler.com
-- **GitHub Issues**: https://github.com/adoaler/js-sdk/issues
+- **GitHub Issues**: https://github.com/Adoaler/JavaScript-SDK/issues
 
 ## Licença
 
 MIT License - veja [LICENSE](LICENSE) para detalhes.
+
 
 
