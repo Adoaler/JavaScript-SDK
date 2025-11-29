@@ -1,0 +1,59 @@
+{
+  "name": "@adoaler/sdk",
+  "version": "2.0.0",
+  "description": "Adoaler SDK for JavaScript/TypeScript - Ads, OAuth, Auth & More",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./ads": {
+      "import": "./dist/ads.mjs",
+      "require": "./dist/ads.js",
+      "types": "./dist/ads.d.ts"
+    },
+    "./id": {
+      "import": "./dist/id.mjs",
+      "require": "./dist/id.js",
+      "types": "./dist/id.d.ts"
+    },
+    "./auth": {
+      "import": "./dist/auth.mjs",
+      "require": "./dist/auth.js",
+      "types": "./dist/auth.d.ts"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsup src/index.ts src/ads.ts src/id.ts src/auth.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --watch",
+    "test": "vitest",
+    "lint": "eslint src/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["adoaler", "sdk", "oauth", "ads", "authentication", "typescript"],
+  "author": "Adoaler <dev@adoaler.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adoaler/sdk-javascript"
+  },
+  "homepage": "https://developers.adoaler.com/sdks/javascript",
+  "bugs": {
+    "url": "https://github.com/adoaler/sdk-javascript/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "eslint": "^8.55.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
