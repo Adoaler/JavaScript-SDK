@@ -1,6 +1,6 @@
 # Adoaler JavaScript SDK
 
-[![npm version](https://badge.fury.io/js/@adoaler/sdk.svg)](https://badge.fury.io/js/@adoaler/sdk)
+[![npm version](https://badge.fury.io/js/%40adoaler%2Fsdk.svg)](https://badge.fury.io/js/%40adoaler%2Fsdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 SDK oficial JavaScript/TypeScript para integração com o Adoaler Security Platform.
@@ -447,3 +447,4 @@ const client = new Adoaler({
 ## Licença
 
 MIT License - veja [LICENSE](LICENSE) para detalhes.
+
